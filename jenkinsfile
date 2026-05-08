@@ -15,7 +15,7 @@ pipeline {
         }
         stage ("Git Checkout") {
             steps {
-                git 'https://github.com/Rishik-Devops/zomato-clone.git'
+                git branch: 'main', url: 'https://github.com/Rishik-Devops/zomato-clone.git'
             }
         }
         stage("Sonarqube Analysis"){
